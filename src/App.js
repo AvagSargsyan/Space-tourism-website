@@ -4,6 +4,7 @@ import Destination from './components/Destination';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Technology from './components/Technology';
+import Error from './components/Error';
 
 function App() {
   return (
@@ -11,10 +12,11 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/destination" element={<Destination />}></Route>
-          <Route path="/crew" element={<Crew />}></Route>
-          <Route path="/technology" element={<Technology />}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/destination" element={<Destination />} />
+          <Route path="/crew" element={<Crew />} />
+          <Route path="/technology" element={<Technology />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
     </div>
