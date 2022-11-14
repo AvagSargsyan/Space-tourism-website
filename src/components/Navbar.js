@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
   return (
     <nav>
-      <div className="logo">Logo</div>
+      <div className="logo">
+        <img src="./assets/shared/logo.svg" alt="logo" />
+      </div>
       <div className="navbar">
         <Link to="/" className="navbar-link">
           <span className="bold">00</span>HOME
