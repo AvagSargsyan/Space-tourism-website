@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import '../styles/navbar.scss';
 
 export default function Navbar() {
   return (
@@ -6,6 +7,7 @@ export default function Navbar() {
       <div className="logo">
         <img src="./assets/shared/logo.svg" alt="logo" />
       </div>
+      <hr />
       <div className="navbar">
         <Link to="/" className="navbar-link">
           <span className="bold">00</span>HOME

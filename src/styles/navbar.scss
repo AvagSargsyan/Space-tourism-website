@@ -1,0 +1,52 @@
+@import './base';
+
+nav {
+  max-width: 100%;
+  font-family: 'Barlow', sans-serif;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  top: 2.4rem;
+  justify-content: space-between;
+
+  .logo {
+    margin: 0 2.6rem;
+  }
+
+  hr {
+    border: 1px solid #777;
+    position: absolute;
+    right: 54%;
+    z-index: 4;
+    width: 31%;
+  }
+
+  .navbar {
+    width: 55%;
+    background: transparent;
+    padding: 0 4.5rem 0 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    backdrop-filter: blur(12px);
+
+    .navbar-link {
+      border-bottom: 3px solid transparent;
+      padding: 2rem 0.2rem;
+      text-decoration: none;
+      color: $heading-color;
+      display: flex;
+      gap: 0.5rem;
+
+      .bold {
+        font-weight: 700;
+      }
+
+      &:hover {
+        border-bottom: 3px solid #979797;
+      }
+    }
+  }
+}
