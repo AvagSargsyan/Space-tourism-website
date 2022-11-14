@@ -10,7 +10,7 @@ export default function Navbar() {
         <Link to="/" className="navbar-link">
           <span className="bold">00</span>HOME
         </Link>
-        <Link to="/destination" className="navbar-link">
+        <Link to="/destinations" className="navbar-link">
           <span className="bold">01</span>DESTINATION
         </Link>
         <Link to="/crew" className="navbar-link">

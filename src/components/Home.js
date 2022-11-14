@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="home">
       <div className="hero">
-        <p className="hero-text">
+        <div className="hero-text">
           <p className="big-text">So, you want to travel to </p>
           <h1>Space</h1>
           <p className="text">
@@ -11,7 +11,7 @@ export default function Home() {
             Well sit back, and relax because we'll give you a truly out of this
             world experience!
           </p>
-        </p>
+        </div>
 
         <button className="main-button">Explore</button>
       </div>
