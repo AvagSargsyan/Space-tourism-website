@@ -1,3 +1,18 @@
 .active-btn {
   text-decoration: underline;
 }
+
+.dot {
+  padding: 0;
+  font-size: 3rem;
+  color: #aaa;
+  cursor: pointer;
+
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.active-dot {
+  color: #eee;
+}
