@@ -16,7 +16,7 @@ export default function Navbar() {
         <Link to="/crew" className="navbar-link">
           <span className="bold">02</span>CREW
         </Link>
-        <Link to="/technology" className="navbar-link">
+        <Link to="/technologies" className="navbar-link">
           <span className="bold">03</span>TECHNOLOGY
         </Link>
       </div>

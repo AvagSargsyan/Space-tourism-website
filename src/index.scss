@@ -15,4 +15,12 @@
 
 .active-dot {
   color: #eee;
+
+  &:hover {
+    color: #eee;
+  }
+}
+
+.active-tech-btn {
+  background: #fff;
 }

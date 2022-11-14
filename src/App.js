@@ -3,7 +3,7 @@ import Crew from './components/Crew';
 import Destinations from './components/Destinations';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import Technology from './components/Technology';
+import Technologies from './components/Technologies';
 import Error from './components/Error';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/destinations" element={<Destinations />} />
           <Route path="/crew" element={<Crew />} />
-          <Route path="/technology" element={<Technology />} />
+          <Route path="/technologies" element={<Technologies />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
