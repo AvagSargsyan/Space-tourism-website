@@ -1,8 +1,15 @@
 @import './base';
 
+.hide {
+  display: none;
+}
+
 nav {
+  @include tablet {
+    top: 0;
+  }
   max-width: 100%;
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Barlow condensed', sans-serif;
   background: transparent;
   position: absolute;
   width: 100%;
@@ -28,7 +35,7 @@ nav {
 
   .navbar {
     @include tablet {
-      width: 75%;
+      width: 65%;
     }
     width: 55%;
     background: rgba(177, 177, 177, 0.158);
@@ -39,6 +46,11 @@ nav {
     backdrop-filter: blur(14px);
 
     .navbar-link {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 2.4px;
+
       border-bottom: 3px solid transparent;
       padding: 2rem 0.2rem;
       text-decoration: none;

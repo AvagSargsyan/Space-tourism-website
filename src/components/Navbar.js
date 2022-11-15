@@ -4,6 +4,10 @@ import useWindowWidth from '../hooks/useWindowWidth';
 
 export default function Navbar() {
 
+  const windowWidth = useWindowWidth();
+  const tabletWidth = 768;
+  const mobileWidth = 480;
+
   return (
     <nav>
       <div className="logo">
@@ -12,16 +16,16 @@ export default function Navbar() {
       <div className='line'></div>
       <div className="navbar">
         <Link to="/" className="navbar-link">
-          <span className="bold">00</span>HOME
+          <span className={windowWidth > tabletWidth ? 'bold' : 'hide'}>00</span>HOME
         </Link>
         <Link to="/destinations" className="navbar-link">
-          <span className="bold">01</span>DESTINATION
+          <span className={windowWidth > tabletWidth ? 'bold' : 'hide'}>01</span>DESTINATION
         </Link>
         <Link to="/crew" className="navbar-link">
-          <span className="bold">02</span>CREW
+          <span className={windowWidth > tabletWidth ? 'bold' : 'hide'}>02</span>CREW
         </Link>
         <Link to="/technologies" className="navbar-link">
-          <span className="bold">03</span>TECHNOLOGY
+          <span className={windowWidth > tabletWidth ? 'bold' : 'hide'}>03</span>TECHNOLOGY
         </Link>
       </div>
     </nav>
