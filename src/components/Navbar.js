@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import '../styles/navbar.scss';
+import useWindowWidth from '../hooks/useWindowWidth';
 
 export default function Navbar() {
+
   return (
     <nav>
       <div className="logo">
