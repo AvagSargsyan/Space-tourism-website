@@ -7,7 +7,8 @@ export default function Navbar() {
       <div className="logo">
         <img src="./assets/shared/logo.svg" alt="logo" />
       </div>
-      <hr />
+      {/* <hr /> */}
+      <div className='line'></div>
       <div className="navbar">
         <Link to="/" className="navbar-link">
           <span className="bold">00</span>HOME

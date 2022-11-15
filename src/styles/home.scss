@@ -1,4 +1,74 @@
+@import './base';
+
 .home {
-  background: url('../../public/assets/home/background-home-desktop.jpg');
+  background: url('../../public/assets/home/background-home-desktop.jpg')
+    $bg-color;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  color: $text-color;
+
+  .hero {
+    width: 100%;
+    padding-top: 14%;
+    // padding: 12%;
+    // background: silver;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+
+    .hero-text {
+      // background: rgb(37, 35, 35);
+      // width: 50%;
+      padding-left: 1rem;
+
+      .big-text {
+        text-transform: uppercase;
+        font-family: 'Barlow condensed', sans-serif;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        font-family: 'Bellefair', sans-serif;
+        font-size: 150px;
+        font-weight: 400;
+        line-height: 172px;
+        color: $heading-color;
+        padding: 1rem 0 2rem 0;
+      }
+
+      .text {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 178%;
+        max-width: 453px;
+      }
+    }
+
+    .main-button {
+      text-transform: uppercase;
+      font-family: 'Bellefair';
+      font-weight: 400;
+      font-size: 32px;
+      letter-spacing: 2px;
+      color: $bg-color;
+      padding: 118px 62px;
+      margin: 10px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 0 100px #777;
+      }
+    }
+  }
 }

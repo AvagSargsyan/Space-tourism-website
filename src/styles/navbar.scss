@@ -15,8 +15,8 @@ nav {
     margin: 0 2.6rem;
   }
 
-  hr {
-    border: 1px solid #777;
+  .line {
+    border-top: 1px solid #666;
     position: absolute;
     right: 54%;
     z-index: 4;
@@ -25,12 +25,12 @@ nav {
 
   .navbar {
     width: 55%;
-    background: transparent;
+    background: rgba(177, 177, 177, 0.158);
     padding: 0 4.5rem 0 3.5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
 
     .navbar-link {
       border-bottom: 3px solid transparent;
