@@ -3,7 +3,16 @@
 .home {
   @include tablet {
     text-align: center;
-    background: url('../../public/assets/home/background-home-tablet.jpg');
+    background: url('../../public/assets/home/background-home-tablet.jpg')
+      $bg-color;
+  }
+
+  @include mobile {
+    background: url('../../public/assets/home/background-home-mobile.jpg')
+      $bg-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3rem;
   }
   background: url('../../public/assets/home/background-home-desktop.jpg')
     $bg-color;
@@ -35,6 +44,11 @@
           line-height: 24px;
           letter-spacing: 3.375px;
         }
+        @include tablet {
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2.7px;
+        }
         text-transform: uppercase;
         font-family: 'Barlow condensed', sans-serif;
         font-size: 28px;
@@ -46,6 +60,11 @@
         @include tablet {
           line-height: 150px;
         }
+        @include mobile {
+          font-size: 80px;
+          line-height: 100px;
+        }
+
         text-transform: uppercase;
         font-family: 'Bellefair', sans-serif;
         font-size: 150px;
@@ -60,6 +79,11 @@
           font-size: 16px;
           line-height: 28px;
         }
+
+        @include tablet {
+          font-size: 15px;
+          line-height: 25px;
+        }
         font-family: 'Barlow', sans-serif;
         font-weight: 400;
         font-size: 18px;
@@ -71,6 +95,13 @@
     .main-button {
       @include tablet {
         padding: 102px 48px;
+      }
+      @include tablet {
+        margin-top: 2rem;
+        padding: 64px 28px;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1.25px;
       }
       text-transform: uppercase;
       font-family: 'Bellefair';
