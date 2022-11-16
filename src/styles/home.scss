@@ -1,6 +1,10 @@
 @import './base';
 
 .home {
+  @include tablet {
+    text-align: center;
+    background: url('../../public/assets/home/background-home-tablet.jpg');
+  }
   background: url('../../public/assets/home/background-home-desktop.jpg')
     $bg-color;
   background-repeat: no-repeat;
@@ -9,10 +13,11 @@
   color: $text-color;
 
   .hero {
+    @include tablet {
+      gap: 4rem;
+    }
     width: 100%;
     padding-top: 14%;
-    // padding: 12%;
-    // background: silver;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -22,11 +27,14 @@
     gap: 1rem;
 
     .hero-text {
-      // background: rgb(37, 35, 35);
-      // width: 50%;
       padding-left: 1rem;
 
       .big-text {
+        @include tablet {
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 3.375px;
+        }
         text-transform: uppercase;
         font-family: 'Barlow condensed', sans-serif;
         font-size: 28px;
@@ -35,6 +43,9 @@
       }
 
       h1 {
+        @include tablet {
+          line-height: 150px;
+        }
         text-transform: uppercase;
         font-family: 'Bellefair', sans-serif;
         font-size: 150px;
@@ -45,6 +56,10 @@
       }
 
       .text {
+        @include tablet {
+          font-size: 16px;
+          line-height: 28px;
+        }
         font-family: 'Barlow', sans-serif;
         font-weight: 400;
         font-size: 18px;
@@ -54,6 +69,9 @@
     }
 
     .main-button {
+      @include tablet {
+        padding: 102px 48px;
+      }
       text-transform: uppercase;
       font-family: 'Bellefair';
       font-weight: 400;
