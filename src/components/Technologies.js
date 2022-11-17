@@ -1,6 +1,7 @@
 import data from '../data.json';
 import { useState } from 'react';
 import Technology from './Technology';
+import '../styles/technologies.scss'
 
 export default function Technologies() {
   const technologiesArr = data.technology;
