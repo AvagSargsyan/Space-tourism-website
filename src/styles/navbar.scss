@@ -7,7 +7,7 @@ nav {
   max-width: 100%;
   font-family: 'Barlow condensed', sans-serif;
   background: transparent;
-  position: absolute;
+  position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@ nav {
     @include tablet {
       width: 0;
     }
-    border-top: 1px solid #666;
+    border-top: 1px solid rgba(102, 102, 102, 0.664);
     position: absolute;
     right: 54%;
     z-index: 4;

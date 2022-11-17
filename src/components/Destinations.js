@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import data from '../data.json';
 import Destination from './Destination';
+import '../styles/destinations.scss';
 
 export default function Destinations() {
   const destinationsArr = data.destinations;

@@ -1,3 +1,5 @@
+import '../styles/destinations.scss';
+
 export default function Destination({
   name,
   images,
@@ -15,12 +17,12 @@ export default function Destination({
         <p className="description">{description}</p>
         <div className="travel-data">
           <div className="distance">
-            <span>avg. distance</span>
-            {distance}
+            <span className='label'>avg. distance</span>
+            <span className='data'>{distance}</span>
           </div>
           <div className="travel-time">
-            <span>est. travel time</span>
-            {travelTime}
+            <span className='label'>est. travel time</span>
+            <span className="data">{travelTime}</span>
           </div>
         </div>
       </div>
