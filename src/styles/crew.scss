@@ -10,24 +10,54 @@
   color: $text-color;
   padding: 12% 5% 0 5%;
 
+  @media (max-width: 1160px) {
+    padding: 12% 2% 0 2%;
+  }
+
+  @include tablet {
+  }
+
   h2 {
     @include heading;
+    padding-top: 2rem;
   }
 
   .crew {
     position: absolute;
     bottom: 0;
     .crew-member {
+      height: 85vh;
       display: flex;
-      align-items: flex-start; // flex-start
+      // flex-direction: column;
+      align-items: center; // flex-start
       justify-content: center;
       gap: 0.5rem;
 
+      @media (max-width: 1160px) {
+        gap: 0;
+      }
+
+      @include tablet {
+        flex-direction: column;
+        height: unset;
+      }
+
       .member-info {
+        // align-self: flex-start;
         // background: gray;
-        flex: 1;
+        // flex: 1;
 
         .role {
+          @media (max-width: 1160px) {
+            font-size: 27px;
+          }
+
+          @include tablet {
+            text-align: center;
+            font-size: 24px;
+            line-height: 28px;
+          }
+
           margin-top: 15%;
           font-weight: 400;
           font-size: 32px;
@@ -39,6 +69,16 @@
         }
 
         .member-name {
+          @media (max-width: 1160px) {
+            font-size: 44px;
+          }
+
+          @include tablet {
+            font-size: 40px;
+            line-height: 46px;
+            text-align: center;
+          }
+
           padding: 1rem 0;
           font-family: 'Bellefair';
           font-weight: 400;
@@ -54,16 +94,44 @@
           font-size: 18px;
           line-height: 32px;
           width: 50%; //90%
+
+          @media (max-width: 1160px) {
+            width: 90%;
+            font-size: 17px;
+          }
+
+          @include tablet {
+            width: 100%;
+            padding: 0.5rem 10%;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+          }
         }
       }
 
       .member-image {
+        @media (max-width: 1160px) {
+          margin-right: 0.2rem;
+        }
+
+        @include tablet {
+          align-self: center;
+        }
+
         padding: 0;
         align-self: flex-end;
         justify-self: flex-end;
         margin-right: 10%; // 5%
 
         img {
+          @media (max-width: 1160px) {
+            height: 32rem !important;
+          }
+
+          @include tablet {
+            height: 30rem !important;
+          }
           height: 40rem;
           max-width: 36rem;
           max-height: 50rem;
@@ -75,15 +143,20 @@
       position: absolute;
       bottom: 1rem;
 
+      @include tablet {
+        right: 50%;
+        transform: translate(50%);
+      }
+
       .dot {
         margin: 0 0.5rem;
         font-size: 3rem;
         color: #fff;
-        opacity: 0.17;
+        opacity: 0.35;
         cursor: pointer;
 
         &:hover {
-          opacity: 0.5;
+          opacity: 0.55;
         }
       }
 
