@@ -8,6 +8,7 @@ nav {
   font-family: 'Barlow condensed', sans-serif;
   background: transparent;
   position: fixed;
+  z-index: 5 !important;
   width: 100%;
   display: flex;
   align-items: center;
@@ -34,7 +35,6 @@ nav {
   }
 
   .navbar {
-    z-index: 5;
     @include tablet {
       width: 65%;
     }

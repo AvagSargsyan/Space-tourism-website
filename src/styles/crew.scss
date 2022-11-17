@@ -15,6 +15,15 @@
   }
 
   @include tablet {
+    background: url('../../public/assets/crew/background-crew-tablet.jpg')
+      $bg-color;
+  }
+
+  @include mobile {
+    background: url('../../public/assets/crew/background-crew-mobile.jpg')
+      $bg-color;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   h2 {
@@ -28,8 +37,7 @@
     .crew-member {
       height: 85vh;
       display: flex;
-      // flex-direction: column;
-      align-items: center; // flex-start
+      align-items: center;
       justify-content: center;
       gap: 0.5rem;
 
@@ -43,10 +51,6 @@
       }
 
       .member-info {
-        // align-self: flex-start;
-        // background: gray;
-        // flex: 1;
-
         .role {
           @media (max-width: 1160px) {
             font-size: 27px;
@@ -56,6 +60,11 @@
             text-align: center;
             font-size: 24px;
             line-height: 28px;
+          }
+
+          @include mobile {
+            font-size: 16px;
+            line-height: 18px;
           }
 
           margin-top: 15%;
@@ -77,6 +86,11 @@
             font-size: 40px;
             line-height: 46px;
             text-align: center;
+          }
+
+          @include mobile {
+            font-size: 24px;
+            line-height: 28px;
           }
 
           padding: 1rem 0;
@@ -107,6 +121,11 @@
             line-height: 28px;
             text-align: center;
           }
+
+          @include mobile {
+            font-size: 15px;
+            line-height: 25px;
+          }
         }
       }
 
@@ -131,6 +150,14 @@
 
           @include tablet {
             height: 30rem !important;
+          }
+
+          @include mobile {
+            height: 22rem !important;
+          }
+
+          @media (max-height: 670px) {
+            height: 15.5rem !important;
           }
           height: 40rem;
           max-width: 36rem;
