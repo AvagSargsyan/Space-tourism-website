@@ -3,3 +3,52 @@
 $bg-color: #0b0d17;
 $text-color: #d0d6f9;
 $heading-color: #fff;
+
+@mixin heading {
+  @include tablet {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    margin: 1.5rem 0 0.4rem 0;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: center;
+    margin: 3rem 0 0.4rem 0;
+  }
+
+  font-family: 'Barlow Condensed';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  margin: 1rem 0;
+
+  span {
+    @include tablet {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 3.375px;
+    }
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+    }
+
+    margin-right: 0.6rem;
+    font-family: 'Barlow Condensed';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: $heading-color;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+}

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import data from '../data.json';
 import CrewMember from './CrewMember';
+import '../styles/crew.scss';
 
 export default function Crew() {
   const crewArr = data.crew;

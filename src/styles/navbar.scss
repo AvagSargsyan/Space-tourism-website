@@ -30,11 +30,11 @@ nav {
     border-top: 1px solid rgba(102, 102, 102, 0.664);
     position: absolute;
     right: 54%;
-    z-index: 4;
     width: 31%;
   }
 
   .navbar {
+    z-index: 5;
     @include tablet {
       width: 65%;
     }

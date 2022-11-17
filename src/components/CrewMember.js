@@ -1,4 +1,4 @@
-export default function CrewMember({ name, images, role, bio }) {
+export default function CrewMember({ id, name, images, role, bio }) {
   return (
     <div className="crew-member">
       <div className="member-info">
@@ -6,7 +6,9 @@ export default function CrewMember({ name, images, role, bio }) {
         <h3 className="member-name">{name}</h3>
         <div className="member-bio">{bio}</div>
       </div>
-      <img src={images.png} alt={name} className="member-image" />
+      <div className="member-image"><img src={images.png} alt={name} style={{
+        height: id === '0' ? '46rem' : ''
+      }} /></div>
     </div>
   );
 }

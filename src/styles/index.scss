@@ -12,25 +12,6 @@ body {
   background: $bg-color;
 }
 
-.dot {
-  padding: 0;
-  font-size: 3rem;
-  color: #aaa;
-  cursor: pointer;
-
-  &:hover {
-    color: #ccc;
-  }
-}
-
-.active-dot {
-  color: #eee;
-
-  &:hover {
-    color: #eee;
-  }
-}
-
 .active-tech-btn {
   background: #fff;
 }

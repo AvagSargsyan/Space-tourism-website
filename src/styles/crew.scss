@@ -1,0 +1,99 @@
+@import './base';
+
+.crew-page {
+  background: url('../../public/assets/crew/background-crew-desktop.jpg')
+    $bg-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-height: 100vh;
+  color: $text-color;
+  padding: 12% 5% 0 5%;
+
+  h2 {
+    @include heading;
+  }
+
+  .crew {
+    position: absolute;
+    bottom: 0;
+    .crew-member {
+      display: flex;
+      align-items: flex-start; // flex-start
+      justify-content: center;
+      gap: 0.5rem;
+
+      .member-info {
+        // background: gray;
+        flex: 1;
+
+        .role {
+          margin-top: 15%;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 37px;
+          text-transform: uppercase;
+          color: $heading-color;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+        }
+
+        .member-name {
+          padding: 1rem 0;
+          font-family: 'Bellefair';
+          font-weight: 400;
+          font-size: 56px;
+          line-height: 64px;
+          text-transform: uppercase;
+          color: $heading-color;
+        }
+
+        .member-bio {
+          font-family: 'Barlow';
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          width: 50%; //90%
+        }
+      }
+
+      .member-image {
+        padding: 0;
+        align-self: flex-end;
+        justify-self: flex-end;
+        margin-right: 10%; // 5%
+
+        img {
+          height: 40rem;
+          max-width: 36rem;
+          max-height: 50rem;
+        }
+      }
+    }
+
+    .change-crew-member-btns {
+      position: absolute;
+      bottom: 1rem;
+
+      .dot {
+        margin: 0 0.5rem;
+        font-size: 3rem;
+        color: #fff;
+        opacity: 0.17;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      .active-dot {
+        opacity: 0.9;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
