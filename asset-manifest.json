@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Space-tourism-website/static/css/main.7d799395.css",
-    "main.js": "/Space-tourism-website/static/js/main.36d8707f.js",
+    "main.css": "/Space-tourism-website/static/css/main.dbbbc16d.css",
+    "main.js": "/Space-tourism-website/static/js/main.6bff93a4.js",
     "static/media/background-home-desktop.jpg": "/Space-tourism-website/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
     "static/media/background-destination-desktop.jpg": "/Space-tourism-website/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
     "static/media/background-home-tablet.jpg": "/Space-tourism-website/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
@@ -13,11 +13,14 @@
     "static/media/background-technology-tablet.jpg": "/Space-tourism-website/static/media/background-technology-tablet.48c38b028217ee0096c4.jpg",
     "static/media/background-destination-mobile.jpg": "/Space-tourism-website/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
     "index.html": "/Space-tourism-website/index.html",
-    "main.7d799395.css.map": "/Space-tourism-website/static/css/main.7d799395.css.map",
-    "main.36d8707f.js.map": "/Space-tourism-website/static/js/main.36d8707f.js.map"
+    "static/media/logo.svg": "/Space-tourism-website/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
+    "static/media/close-icon.svg": "/Space-tourism-website/static/media/close-icon.fedddcdb173da9d568d72d8dddddc2bd.svg",
+    "static/media/menu-icon.svg": "/Space-tourism-website/static/media/menu-icon.b88936afeda0498b07d45282feb2b5d9.svg",
+    "main.dbbbc16d.css.map": "/Space-tourism-website/static/css/main.dbbbc16d.css.map",
+    "main.6bff93a4.js.map": "/Space-tourism-website/static/js/main.6bff93a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d799395.css",
-    "static/js/main.36d8707f.js"
+    "static/css/main.dbbbc16d.css",
+    "static/js/main.6bff93a4.js"
   ]
 }
