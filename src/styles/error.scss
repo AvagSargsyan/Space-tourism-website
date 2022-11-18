@@ -1,0 +1,23 @@
+@import './base';
+
+.error-message {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .msg-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+  }
+
+  .message {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+}
