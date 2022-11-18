@@ -20,7 +20,7 @@ export default function Technologies() {
 
   return (
     <div className="technologies-page">
-      <h2>
+      <h2 className='tech-heading'>
         <span>03</span> Space launch 101
       </h2>
       <div className="technologies">

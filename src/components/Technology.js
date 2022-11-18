@@ -1,4 +1,10 @@
+import useWindowWidth from '../hooks/useWindowWidth';
+
 export default function Technology({ name, images, description }) {
+
+  const windowWidth = useWindowWidth();
+  const tabletWidth = 768;
+
   return (
     <div className="technology">
       <div className="technology-info">
@@ -7,7 +13,7 @@ export default function Technology({ name, images, description }) {
         <p className="technology-description">{description}</p>
       </div>
       <div className="technology-image">
-        <img src={images.portrait} alt={name} />
+        <img src={windowWidth > tabletWidth ? images.portrait : images.landscape} alt={name} />
       </div>
     </div>
   );
