@@ -12,10 +12,10 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/destinations" element={<Destinations />} />
-          <Route path="/crew" element={<Crew />} />
-          <Route path="/technologies" element={<Technologies />} />
+          <Route path="/Space-tourism-website" element={<Home />} />
+          <Route path="/Space-tourism-website/destinations" element={<Destinations />} />
+          <Route path="/Space-tourism-website/crew" element={<Crew />} />
+          <Route path="/Space-tourism-website/technologies" element={<Technologies />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

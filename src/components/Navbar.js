@@ -1,8 +1,11 @@
-// import { Link } from 'react-router-dom';
 import '../styles/navbar.scss';
 import useWindowWidth from '../hooks/useWindowWidth';
 import NavLink from './NavLink';
 import { useState } from 'react';
+
+import logoSrc from '../static-assets/logo.svg';
+import closeIconSrc from '../static-assets/close-icon.svg';
+import menuIconSrc from '../static-assets/menu-icon.svg';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -11,7 +14,7 @@ export default function Navbar() {
 
   const menuIcon = (
     <img
-      src="./assets/menu-icon.svg"
+      src={menuIconSrc}
       alt="close"
       className="menu-icon"
       onClick={toggleMenu}
@@ -20,7 +23,7 @@ export default function Navbar() {
 
   const closeIcon = (
     <img
-      src="./assets/close-icon.svg"
+      src={closeIconSrc}
       alt="close"
       className="close-menu-icon"
       onClick={toggleMenu}
@@ -30,10 +33,10 @@ export default function Navbar() {
   const navlinks = (
     <div className="navbar">
       {windowWidth < mobileWidth ? closeIcon : ''}
-      <NavLink number="00" name="HOME" to="/" />
-      <NavLink number="01" name="DESTINATION" to="/destinations" />
-      <NavLink number="02" name="CREW" to="/crew" />
-      <NavLink number="03" name="TECHNOLOGY" to="/technologies" />
+      <NavLink number="00" name="HOME" to="/Space-tourism-website" />
+      <NavLink number="01" name="DESTINATION" to="/Space-tourism-website/destinations" />
+      <NavLink number="02" name="CREW" to="/Space-tourism-website/crew" />
+      <NavLink number="03" name="TECHNOLOGY" to="/Space-tourism-website/technologies" />
     </div>
   );
 
@@ -44,7 +47,9 @@ export default function Navbar() {
   return (
     <nav>
       <div className="logo">
-        <img src="./assets/shared/logo.svg" alt="logo" />
+        <img
+          src={logoSrc}
+          alt="logo" />
       </div>
       <div className="line"></div>
       {windowWidth > mobileWidth ? navlinks : showMenu ? navlinks : menuIcon}
