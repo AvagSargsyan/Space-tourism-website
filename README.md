@@ -6,6 +6,8 @@ A multi-page space tourism website with responsive design and some cool animatio
 
 ## Links
 
+You can visit the website by following this [link](http://avagsargsyan.github.io/Space-tourism-website/).
+
 ## Built with
 
 - React
