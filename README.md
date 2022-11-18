@@ -1,3 +1,21 @@
+# Space tourism website
+
+A multi-page space tourism responsive website with some cool animations.
+
+![Space tourism website](./assets/screenshot-home.png)
+
+## Links
+
+## Built with
+
+- React
+- SASS
+
+## Author
+
+- Website - [Avag Sargsyan](https://github.com/AvagSargsyan)
+- Design - [Frontend Mentor](https://www.frontendmentor.io)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
