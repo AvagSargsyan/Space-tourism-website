@@ -2,7 +2,7 @@
 
 A multi-page space tourism responsive website with some cool animations.
 
-![Space tourism website](./assets/screenshot-home.png)
+![Space tourism website](./public/assets/screenshot-home.png)
 
 ## Links
 
