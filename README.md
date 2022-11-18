@@ -1,6 +1,6 @@
 # Space tourism website
 
-A multi-page space tourism responsive website with some cool animations.
+A multi-page space tourism website with responsive design and some cool animations.
 
 ![Space tourism website](./public/assets/screenshot-home.png)
 
