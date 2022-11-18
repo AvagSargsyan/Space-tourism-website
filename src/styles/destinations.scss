@@ -62,7 +62,7 @@
       cursor: pointer;
       border: none;
       background: transparent;
-      font-family: 'Barlow Condensed';
+      font-family: 'Barlow Condensed', sans-serif;
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
@@ -153,7 +153,7 @@
           line-height: 64px;
         }
 
-        font-family: 'Bellefair';
+        font-family: 'Bellefair', sans-serif;
         font-weight: 400;
         font-size: 100px;
         line-height: 115px;
@@ -177,7 +177,7 @@
           line-height: 25px;
         }
 
-        font-family: 'Barlow';
+        font-family: 'Barlow', sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 32px;
@@ -216,7 +216,7 @@
           gap: 0.6rem;
 
           .label {
-            font-family: 'Barlow Condensed';
+            font-family: 'Barlow Condensed', sans-serif;
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
@@ -224,7 +224,7 @@
           }
 
           .data {
-            font-family: 'Bellefair';
+            font-family: 'Bellefair', sans-serif;
             font-weight: 400;
             font-size: 28px;
             line-height: 32px;
