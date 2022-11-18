@@ -7,7 +7,7 @@ export default function Technology({ name, images, description }) {
 
   return (
     <div className="technology">
-      <div className="technology-info">
+      <div className="technology-info" key={Math.random()}>
         <p className="terminalogy-text">The terminology...</p>
         <h2>{name}</h2>
         <p className="technology-description">{description}</p>

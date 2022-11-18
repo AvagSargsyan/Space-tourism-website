@@ -29,6 +29,7 @@
 
   .tech-heading {
     @include heading;
+    animation: fade-up 1s ease-in-out;
 
     @include tablet {
       margin-left: 1rem;
@@ -118,6 +119,7 @@
         }
 
         .terminalogy-text {
+          animation: fade-down 0.8s ease-in-out;
           text-transform: uppercase;
           font-family: 'Barlow Condensed', sans-serif;
           font-weight: 400;
@@ -148,6 +150,7 @@
             line-height: 28px;
           }
 
+          animation: fade-down 0.8s ease-in-out;
           padding: 1rem 0;
           color: $heading-color;
           text-transform: uppercase;
@@ -172,6 +175,8 @@
             font-size: 15px;
             line-height: 25px;
           }
+
+          animation: fade-up 0.8s ease-in-out;
           width: 55%;
           font-family: 'Barlow', sans-serif;
           font-weight: 400;

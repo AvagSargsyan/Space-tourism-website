@@ -36,6 +36,7 @@
     gap: 1rem;
 
     .hero-text {
+      animation: fade-up 0.5s ease-in-out;
       padding-left: 1rem;
 
       .big-text {
@@ -103,6 +104,7 @@
         line-height: 23px;
         letter-spacing: 1.25px;
       }
+      animation: grow 0.5s ease-in-out;
       text-transform: uppercase;
       font-family: 'Bellefair', sans-serif;
       font-weight: 400;

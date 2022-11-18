@@ -52,3 +52,98 @@ $heading-color: #fff;
     opacity: 0.25;
   }
 }
+
+@mixin animations {
+  @keyframes grow {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes orbit {
+    from {
+      transform: scale(0.1) rotateZ(30deg) translateX(-600px);
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-up {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-down {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-right {
+    from {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-left {
+    from {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes image-left {
+    from {
+      transform: translateX(-10px);
+    }
+  }
+
+  @keyframes cover {
+    from {
+      transform: translate(100%);
+      opacity: 0.5;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes cover-down {
+    from {
+      transform: translateY(-100%);
+      opacity: 0.5;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}

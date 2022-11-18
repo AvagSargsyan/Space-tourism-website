@@ -1,6 +1,6 @@
 export default function CrewMember({ id, name, images, role, bio }) {
   return (
-    <div className="crew-member">
+    <div className="crew-member" key={Math.random()}>
       <div className="member-info">
         <div className="role">{role}</div>
         <h3 className="member-name">{name}</h3>

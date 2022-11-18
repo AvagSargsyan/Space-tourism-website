@@ -39,6 +39,7 @@ nav {
       width: 65%;
     }
     @include mobile {
+      animation: cover 0.2s forwards;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -46,6 +47,8 @@ nav {
       height: 100vh;
       padding: 1rem 0;
     }
+
+    animation: cover-down 0.4s forwards;
     width: 55%;
     background: rgba(95, 95, 95, 0.226);
     padding: 0 4.5rem 0 3.5rem;
@@ -65,7 +68,6 @@ nav {
       font-weight: 400;
       line-height: 17px;
       letter-spacing: 2.4px;
-
       border-bottom: 3px solid transparent;
       padding: 2rem 0.2rem;
       text-decoration: none;
@@ -78,6 +80,14 @@ nav {
         font-size: 1.1rem;
         width: 100%;
         border-right: 4px solid transparent;
+
+        &:nth-child(2n) {
+          animation: fade-right 0.6s ease-in-out;
+        }
+
+        &:nth-child(2n + 1) {
+          animation: fade-left 0.6s ease-in-out;
+        }
       }
 
       .bold {

@@ -28,6 +28,7 @@
 
   h2 {
     @include heading;
+    animation: fade-up 1s ease-in-out;
     padding-top: 2rem;
   }
 
@@ -67,6 +68,7 @@
             line-height: 18px;
           }
 
+          animation: fade 1s ease-in-out;
           margin-top: 15%;
           font-weight: 400;
           font-size: 32px;
@@ -93,6 +95,7 @@
             line-height: 28px;
           }
 
+          animation: fade-down 1s ease-in-out;
           padding: 1rem 0;
           font-family: 'Bellefair', sans-serif;
           font-weight: 400;
@@ -103,6 +106,7 @@
         }
 
         .member-bio {
+          animation: fade-up 1s ease-in-out;
           font-family: 'Barlow', sans-serif;
           font-weight: 400;
           font-size: 18px;
@@ -138,6 +142,7 @@
           align-self: center;
         }
 
+        animation: image-left 1s ease-in-out;
         padding: 0;
         align-self: flex-end;
         justify-self: flex-end;
@@ -195,5 +200,14 @@
         }
       }
     }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
   }
 }

@@ -30,6 +30,7 @@
   }
   h2 {
     @include heading;
+    animation: fade-up 1s ease-in-out;
   }
 
   .destination-options {
@@ -120,6 +121,7 @@
         width: 430px;
         height: 430px;
       }
+      animation: orbit 1s ease-in-out;
     }
 
     .destination-info {
@@ -153,6 +155,7 @@
           line-height: 64px;
         }
 
+        animation: fade-down 1s ease-in-out;
         font-family: 'Bellefair', sans-serif;
         font-weight: 400;
         font-size: 100px;
@@ -177,6 +180,7 @@
           line-height: 25px;
         }
 
+        animation: fade-up 1s ease-in-out;
         font-family: 'Barlow', sans-serif;
         font-weight: 400;
         font-size: 18px;
@@ -231,6 +235,12 @@
             text-transform: uppercase;
             color: $heading-color;
           }
+        }
+        .distance {
+          animation: fade-right 1s ease-in-out;
+        }
+        .travel-time {
+          animation: fade-left 1s ease-in-out;
         }
       }
     }

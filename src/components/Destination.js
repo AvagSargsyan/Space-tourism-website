@@ -9,10 +9,11 @@ export default function Destination({
 }) {
   return (
     <div className="destination">
-      <div className="destination-image">
+      {/* the key attributes are for rerendering, so that they will animate every time state changes */}
+      <div className="destination-image" key={Math.random()}>
         <img src={images.png} alt={name} />
       </div>
-      <div className="destination-info">
+      <div className="destination-info" key={Math.random()}>
         <h2>{name}</h2>
         <p className="description">{description}</p>
         <div className="travel-data">
