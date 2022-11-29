@@ -10,8 +10,8 @@ You can visit the website by following this [link](http://avagsargsyan.github.io
 
 ## Built with
 
-- React
-- SASS
+- [React](https://reactjs.org/)
+- [SASS](https://sass-lang.com/)
 
 ## Author
 
